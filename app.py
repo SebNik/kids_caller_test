@@ -5,8 +5,8 @@ import requests
 import json
 from twilio.twiml.messaging_response import MessagingResponse
 import datetime
-from flask_sqlalchemy import SQLAlchemy
 import os
+from flask_sqlalchemy import SQLAlchemy
 
 # connecting to flask app
 app = Flask(__name__)
