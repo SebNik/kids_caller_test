@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    {% if title %}
+    <title>{{ main.title }}</title>
+    {% else %}
+    <title>Main-Page</title>
+    {% endif %}
+</head>
+<body>
+    <div>
+        Main-Page:
+        <a href="/">Home</a>
+        <a href="/api_caller_kids_last">API-Last</a>
+        <a href="/api_caller_kids_full">API-Full</a>
+    </div>
+    <hr>
+    <p><b>Time: </b>{{ main.time }}</p>
+        {% block content %}{% endblock %}
+</body>
+</html>
